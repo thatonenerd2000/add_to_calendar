@@ -24,6 +24,18 @@
         <br>
         <hr>
 
-        <script src="script.js"></script>
+        <script>
+            const gCalUrl = `https://calendar.google.com/calendar/u/0/r/eventedit?text=Diversity+Demo+Day&dates=20211010T080000/20211010T100000&ctz=America/Los_Angeles&details=The+Metabronx+Diversity+Demo+Day+Event&location=Location+of+the+event&pli=1&uid=1627492462addeventcom&sf=true&output=xml`;
+            const outlookUrl = `https://outlook.live.com/owa/?path=/calendar/action/compose&rru=addevent&startdt=2021-10-10T12%3A00%3A00-05%3A00&enddt=2021-10-10T12%3A30%3A00-05%3A00&subject=Diversity+Demo+Day&body=The+Metabronx+Diversity+Demo+Day+Event`;
+
+            document.querySelector("#gcal-button").onclick = () => {
+                window.open(gCalUrl, "_blank");
+            };
+
+            document.querySelector("#outlook-button").onclick = () => {
+                window.open(outlookUrl, "_blank");
+            };
+
+        </script>
     </body>
 </html>
